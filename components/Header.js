@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 
 const HeaderStyle = {
-    border: '1px solid #DDD'
+    border: '1px solid #DDD',
 }
 
 const Header = () =>(
