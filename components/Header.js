@@ -1,16 +1,19 @@
 import Link from 'next/link'
 
 
-
-const HeaderStyle = {
-    border: '1px solid #DDD',
-}
-
 const Header = () =>(
-    <div style={HeaderStyle}>
-        <p>TREVARI </p>
-    </div>
     
+    <li>
+        <div>
+           <p>TREVARI </p>
+        </div>
+        <style jsx>
+        {`
+        p {
+            color:green
+        }
+        `}</style>
+    </li>
 )
 
 export default Header;
