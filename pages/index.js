@@ -5,7 +5,7 @@ import Categoty from '../components/Category'
 export default () =>(
     <div>
         <Header />
-        <Categoty />>
+        <Categoty />
         <p>
             인덱스페이지입니다.
         </p>
