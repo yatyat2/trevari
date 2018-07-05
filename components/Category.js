@@ -24,7 +24,7 @@ export default class Example extends React.Component {
     return (
       <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle caret>
-          Dropdown
+          <img src="/static/category.png"/>
         </DropdownToggle>
         <DropdownMenu>
           <DropdownItem>Header</DropdownItem>

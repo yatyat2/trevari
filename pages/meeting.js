@@ -1,9 +1,9 @@
 
 import Header from '../components/Header'
-
+import Navbar from '../components/Navbar'
 export default () =>(
     <div>
-        <Header />
+        <Navbar />
         <p>
             미팅페이지입니다.
         </p>
