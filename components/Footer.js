@@ -1,8 +1,8 @@
-
+import Link from 'next/link'
 
 export default () =>(
     <div id="footer">
-        <div id="QNA">자주 묻는 질문 & 공지사항</div>
+        <div id="QNA"><Link href="./cs"><a>자주 묻는 질문 & 공지사항</a></Link></div>
         <div id="vision">세상을 더 지적으로 사람들을 더 친하게</div>
         <div id="linktext">
             <a>이용약관</a><br/>      
@@ -17,18 +17,22 @@ export default () =>(
 </div>
         <div id="text">Copyright © 2018 Trevari. All rights reserved.</div>
 
-        <style jax>
+        <style jsx>
         {`
         div#QNA {
             background-color:orange;
-            z-index:100;
-            color:white;
+            z-index:100;            
             padding:6px 12px 6px 12px;
             border:1px solid orange;
             border-radius:5px 5px 5px 5px;
-           
+            margin-bottom:32px;
             text-align:center;
+            text-decoration:none;
 
+        }
+
+        #QNA > a {
+            color:white;
         }
 
         #footer {

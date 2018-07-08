@@ -11,16 +11,12 @@ const Example = (props) => {
         <div id="cardimg">
         <CardImg top width="100%" src={props.imgsrc} alt="Card image cap" />
         </div>
-        
-        
-        
+          
             <CardImgOverlay>
             <div id ="overlaytext">
             <CardText><span id="textofclubname">{props.clubname}</span><br/>{props.subject}</CardText>
             </div>          
             </CardImgOverlay>
-        
-        
         
         <CardBody id="cardbody">
           {/* <div id ="cardtitle"> */}
@@ -32,7 +28,7 @@ const Example = (props) => {
         </CardBody>
         
       </Card>
-      <style jax>
+      <style jsx>
       {`
       div#overlaytext {
         margin-top:128px;

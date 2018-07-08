@@ -7,7 +7,7 @@ export default () =>(
         <div id="calendar">독서모임 전체 일정 캘린더 바로가기</div>
         <div><Searchfrom/></div>
 
-        <style jax>
+        <style jsx>
         {`
         #text {
             color:gray;

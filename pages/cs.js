@@ -1,8 +1,9 @@
-
+import Layout from '../components/Layout'
+import Question from '../components/Question'
+import FaqHeader from '../components/FaqHeader'
 export default () => (
-    <div>
-        <p>
-            Q & A 사이트입니다.
-        </p>
-    </div>
+    <Layout>
+       <FaqHeader/>
+        
+    </Layout>
 )

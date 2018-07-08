@@ -7,7 +7,7 @@ const Layout = (props) => (
         <br/><br/><br/>
           {props.children}
         <Footer/>
-        <style jax>
+        <style jsx>
         {`
         div#br {
             style=clear:both;

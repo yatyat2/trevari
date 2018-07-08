@@ -13,8 +13,10 @@ const data = [
 export default () =>(   
 
     <div>
+        
+
         <Layout>
-            <div id="search">
+            <div>
                 <Search/>  
             </div>
             
@@ -25,13 +27,7 @@ export default () =>(
             
         </Layout>
 
-        <style jax>
-        {`
-        div#search {
-            
-        }
-        `}
-        </style>
+        
     </div> 
     
 )
