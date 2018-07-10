@@ -5,7 +5,6 @@ export default () =>(
     <div id="search">
         <div id="text">내 일정에 맞는 놀러가기 클럽을 찾으신다면?</div>
         <div id="calendar">독서모임 전체 일정 캘린더 바로가기</div>
-        <div><Searchfrom/></div>
 
         <style jsx>
         {`

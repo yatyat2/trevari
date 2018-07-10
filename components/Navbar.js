@@ -40,7 +40,7 @@ export default class Example extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
-        <style jsx>
+        <style jsx global>
         {`
         div#menubar {
             position:fixed;
