@@ -13,7 +13,13 @@ const Layout = (props) => (
             style=clear:both;
         }
 
+        @media (min-width:1024px){
+                    
+        }
+        
         `}
+
+        
         </style>
 
     </div>

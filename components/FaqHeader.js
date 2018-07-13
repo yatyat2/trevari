@@ -96,14 +96,14 @@ export default class faqheader extends React.Component {
      
       <div id="qnacategory">
         <div id="qnatext">
-        더 궁금하신 사항은 contact@trevari.co.kr로 문의주세요 :)
-        <br/>- 회신가능요일: 수~일
+            더 궁금하신 사항은 contact@trevari.co.kr로 문의주세요 :)
+            <br/>- 회신가능요일: 수~일
         </div>
         
         <div id="buttongroup">
             <button id={this.state.category=='북클럽' ? "qnabuttonactive" : "qnabutton"} onClick={()=>this.setState({category:'북클럽'})}>북클럽</button>
             <button id={this.state.category=='신청/환불' ? "qnabuttonactive" : "qnabutton"} onClick={()=>this.setState({category:'신청/환불'})}>신청/환불</button>
-            <button id={this.state.category=='독후감' ? "qnabuttonactive" : "qnabutton"} onClick={()=>this.setState({category:'독후감'})}>독후감</button><br/>
+            <button id={this.state.category=='독후감' ? "qnabuttonactive" : "qnabutton"} onClick={()=>this.setState({category:'독후감'})}>독후감</button>
             <button id={this.state.category=='놀러가기' ? "qnabuttonactive" : "qnabutton"} onClick={()=>this.setState({category:'놀러가기'})}>놀러가기</button>
             <button id={this.state.category=='이벤트' ? "qnabuttonactive" : "qnabutton"} onClick={()=>this.setState({category:'이벤트'})}>이벤트</button>
             <button id={this.state.category=='아지트' ? "qnabuttonactive" : "qnabutton"} onClick={()=>this.setState({category:'아지트'})}>아지트</button>
@@ -151,6 +151,10 @@ export default class faqheader extends React.Component {
 
         #buttongroup {
             text-align:center;
+        }
+
+        @media (min-width:1024px){
+                    
         }
         `}
         </style>

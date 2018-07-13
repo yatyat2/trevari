@@ -1,6 +1,3 @@
-import Searchfrom from './Searchform'
-
-
 export default () =>(
     <div id="search">
         <div id="text">내 일정에 맞는 놀러가기 클럽을 찾으신다면?</div>
@@ -27,6 +24,16 @@ export default () =>(
             border:1px solid orange;
             border-radius:5px 5px 5px 5px;
             margin-bottom:16px;
+        }
+
+        @media (min-width:1024px){
+            #calendar{
+                width:290px;
+                display:inline-block;
+            }    
+            #search {
+                display:inline-block;
+            }
         }
         `}
         </style>

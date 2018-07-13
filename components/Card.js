@@ -5,31 +5,29 @@ import { Card, CardBody, Button, CardTitle, CardText, CardImg, CardImgOverlay } 
 
 const Example = (props) => {
   return (
-    <div>
+    <div id="cardform">
       <Card body outline color="white">
-        
         <div id="cardimg">
-        <CardImg top width="100%" src={props.imgsrc} alt="Card image cap" />
+          <CardImg top width="100%" height="200px" src={props.imgsrc} alt="Card image cap" />
         </div>
           
-            <CardImgOverlay>
-            <div id ="overlaytext">
+        <CardImgOverlay>
+          <div id ="overlaytext">
             <CardText><span id="textofclubname">{props.clubname}</span><br/>{props.subject}</CardText>
-            </div>          
-            </CardImgOverlay>
+          </div>          
+        </CardImgOverlay>
         
         <CardBody id="cardbody">
-          {/* <div id ="cardtitle"> */}
-          <CardTitle id="cardtitle">{props.title}</CardTitle>
-          {/* </div> */}
-          
+          <CardTitle id="cardtitle">{props.title}</CardTitle>         
           <CardText>{props.place}<br/>{props.time}</CardText>
-          {/* <CardText>{props.time}</CardText> */}
         </CardBody>
         
       </Card>
-      <style jsx>
+      <style jsx global>
       {`
+
+
+
       div#overlaytext {
         margin-top:128px;
         padding:12px 16px 12px 16px;
@@ -60,9 +58,16 @@ const Example = (props) => {
 
       #textofclubname {
         font-weight:bold;
-      }
+      } 
 
-      
+      #cardform{}
+      @media (min-width:1024px){
+          #cardform{
+            width:33.3%;
+            display:inline-block;
+            margin-top:0px;
+          }
+      }
       `}
       </style>
     </div>

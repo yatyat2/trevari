@@ -4,17 +4,17 @@ export default () =>(
     <div id="footer">
         <div id="QNA"><Link href="./cs"><a>자주 묻는 질문 & 공지사항</a></Link></div>
         <div id="vision">세상을 더 지적으로 사람들을 더 친하게</div>
+        
         <div id="linktext">
             <a>이용약관</a><br/>      
         </div>
+        
         <div id="linktext">
             <a>개인정보 취급방침</a>
         </div>
 
-        <div id="text">트레바리 | 대표: 윤수영 | 사업자 등록번호: 195-40-00129 | 주소: 서울특별시 강남구 압구정로28길 22-11, 404호
-</div>
-        <div id="text">전화: 070-7799-9708 | E-mail: contact@trevari.co.kr
-</div>
+        <div id="text">트레바리 | 대표: 윤수영 | 사업자 등록번호: 195-40-00129 | 주소: 서울특별시 강남구 압구정로28길 22-11, 404호</div>
+        <div id="text">전화: 070-7799-9708 | E-mail: contact@trevari.co.kr</div>
         <div id="text">Copyright © 2018 Trevari. All rights reserved.</div>
 
         <style jsx>
@@ -50,6 +50,26 @@ export default () =>(
         #vision {
             font-weight:bold;
             margin-bottom:32px;
+        }
+
+        @media (min-width:1024px){
+            div#QNA{
+                width:200px;
+                padding:6px 12px 6px 12px;
+                font-size:14px;
+                display:inline-block;
+                float:right;
+                background-color:white;
+                
+            }
+
+            #QNA > a {
+                color:orange;
+            }
+
+            #vision{
+                display:inline-block;
+            }
         }
         `}
         </style>

@@ -1,59 +1,84 @@
 import React from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink, } from 'reactstrap';
 
 export default class Example extends React.Component {
   constructor(props) {
     super(props);
 
-    this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.toggle = this.toggle.bind(this);
     this.state = {
-      collapsed: true
+      isOpen: false
     };
   }
-
-  toggleNavbar() {
+  toggle() {
     this.setState({
-      collapsed: !this.state.collapsed
+      isOpen: !this.state.isOpen
     });
   }
   render() {
     return (
       <div id="menubar">
-        <Navbar color="faded" light>
-          <NavbarBrand id="TREVARI" href="/" className="mr-auto">TREVARI</NavbarBrand>
-          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-          <Collapse isOpen={!this.state.collapsed} navbar>
-            <Nav navbar>
-              <NavItem>
-                <NavLink href="/">독서모임</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="./events">이벤트</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="./apply">멤버십 신청</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="./login">로그인</NavLink>
-              </NavItem>
+        <Navbar id="asdasd"color="faded" light expand="md">
+          <NavbarBrand id="logo"href="/">TREVARI</NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+            <NavItem>
+                 <NavLink href="/">독서모임</NavLink>
+               </NavItem>
+              
+               <NavItem>
+                 <NavLink href="./events">이벤트</NavLink>
+               </NavItem>
+              
+               <NavItem>
+                 <NavLink href="./apply">멤버십 신청</NavLink>
+               </NavItem>
+              
+               <NavItem>
+                 <NavLink href="./login">로그인</NavLink>
+               </NavItem>  
               
             </Nav>
           </Collapse>
         </Navbar>
         <style jsx global>
         {`
-        div#menubar {
+        
+        #menubar {
             position:fixed;
             background-color:white;
             width:100%;
             z-index:1;
             border-bottom:1px solid gray;
         }
-        #menubar > nav > a {
+
+        
+
+        #logo {
           color:orange;
           font-weight:bold;
         }
         
+        #asdasd {
+        }
+
+        @media (min-width:1024px){
+          #asdasd {
+            width:90%;
+            margin:0px auto;
+          }
+          
+              
+        }
+     
         `}
         </style>
       </div>
