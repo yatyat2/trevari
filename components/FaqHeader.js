@@ -1,10 +1,6 @@
-import Question from '../components/Question'
-import Test from '../components/Question'
-
 export default class faqheader extends React.Component {
     render() {
     return (
-        
      
       <div id="qnacategory">
         <div id="qnatext">
@@ -19,11 +15,6 @@ export default class faqheader extends React.Component {
         
         <style jsx>
         {`
-    
-        #test {
-            background-color:orange;
-        }
-
         #qnabuttonactive {
             background-color:orange;
             border:1px solid orange;
@@ -59,28 +50,9 @@ export default class faqheader extends React.Component {
         #buttongroup {
             text-align:center;
         }
-
-        @media (min-width:1024px){
-                    
-        }
         `}
         </style>
       </div>
     );
   }
 }
-
-// export default class Square extends React.Component{
-//     constructor(props){
-//         super(props);
-//         this.state ={
-//             value:null,
-//         };
-//     }
-//     render(){
-//         return (
-//             
-//         );
-//     }
-// }
-
