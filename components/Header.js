@@ -6,7 +6,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink, } from 'reactstrap';
+  NavLink } from 'reactstrap';
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -30,7 +30,7 @@ export default class Header extends React.Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-            <NavItem>
+              <NavItem>
                  <NavLink href="/">독서모임</NavLink>
                </NavItem>
             </Nav>
@@ -38,34 +38,25 @@ export default class Header extends React.Component {
         </Navbar>
         <style jsx global>
         {`
-        
-        #menubar {
+          #menubar {
             position:fixed;
             background-color:white;
             width:100%;
             z-index:1;
             border-bottom:1px solid gray;
-        }
-
-        
-
-        #logo {
-          color:orange;
-          font-weight:bold;
-        }
-        
-        #header {
-        }
-
-        @media (min-width:1024px){
-          #header {
-            width:90%;
-            margin:0px auto;
           }
-          
-              
-        }
-     
+
+          #logo {
+            color:orange;
+            font-weight:bold;
+          }
+
+          @media (min-width:1024px){
+            #header {
+              width:90%;
+              margin:0px auto;
+            }
+          }
         `}
         </style>
       </div>
