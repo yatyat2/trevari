@@ -33,19 +33,6 @@ export default class Example extends React.Component {
             <NavItem>
                  <NavLink href="/">독서모임</NavLink>
                </NavItem>
-              
-               <NavItem>
-                 <NavLink href="./events">이벤트</NavLink>
-               </NavItem>
-              
-               <NavItem>
-                 <NavLink href="./apply">멤버십 신청</NavLink>
-               </NavItem>
-              
-               <NavItem>
-                 <NavLink href="./login">로그인</NavLink>
-               </NavItem>  
-              
             </Nav>
           </Collapse>
         </Navbar>
