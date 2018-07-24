@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import FaqHeader from '../components/FaqHeader'
+import Question from '../components/Question'
 
 export default class CS extends React.Component {
     constructor(props){
@@ -45,7 +46,15 @@ export default class CS extends React.Component {
         <Layout>
             <div id="faqcontent">
                 <FaqHeader selectedCategory={this.state.category} handleChangeCategory={this.handleChangeCategory} />
-                <div>{this.renderQuestion}</div>
+                <div>{this.state.qnadata
+                        .filter(faq => {
+                            return faq.category == this.state.category
+                        })
+                        .map(faq => {
+                            return (<Question category={faq.category} question={faq.question} answer={faq.answer}/>)
+                        })
+                    }
+                </div>
             </div>
             <style jsx>
             {`
@@ -63,52 +72,6 @@ export default class CS extends React.Component {
         </Layout>
     )
   }
-   renderQuestion = () =>{
-    if(this.state.category == '북클럽')
-        {   
-            return this.state.qnadata.map((step)=>{
-                if(step.category == '북클럽'){
-                    return (<Question category={step.category} question={step.question} answer={step.answer}/>);
-                }
-            }
-        )
-        }else if(this.state.category =='신청/환불'){
-            return this.state.qnadata.map((step)=>{
-                if(step.category == '신청/환불'){
-                    return (<Question category={step.category} question={step.question} answer={step.answer}/>);
-                }
-            }
-        )
-        }else if(this.state.category =='독후감'){
-            return this.state.qnadata.map((step)=>{
-                if(step.category == '독후감'){
-                    return (<Question category={step.category} question={step.question} answer={step.answer}/>);
-                }
-            }
-        )
-        }else if(this.state.category =='놀러가기'){
-            return this.state.qnadata.map((step)=>{
-                if(step.category == '놀러가기'){
-                    return (<Question category={step.category} question={step.question} answer={step.answer}/>);
-                }
-            }
-        )
-        }else if(this.state.category =='이벤트'){
-            return this.state.qnadata.map((step)=>{
-                if(step.category == '이벤트'){
-                    return (<Question category={step.category} question={step.question} answer={step.answer}/>);
-                }
-            }
-        )
-        }else if(this.state.category =='아지트'){
-            return this.state.qnadata.map((step)=>{
-                if(step.category == '아지트'){
-                    return (<Question category={step.category} question={step.question} answer={step.answer}/>);
-                }
-            }
-        )
-        }
-    }   
 
     handleChangeCategory = (category) => () => {
         this.setState({category});
