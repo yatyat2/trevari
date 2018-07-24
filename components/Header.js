@@ -25,7 +25,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <div id="menubar">
-        <Navbar id="asdasd"color="faded" light expand="md">
+        <Navbar id="header"color="faded" light expand="md">
           <NavbarBrand id="logo"href="/">TREVARI</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -54,11 +54,11 @@ export default class Header extends React.Component {
           font-weight:bold;
         }
         
-        #asdasd {
+        #header {
         }
 
         @media (min-width:1024px){
-          #asdasd {
+          #header {
             width:90%;
             margin:0px auto;
           }
