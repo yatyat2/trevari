@@ -1,9 +1,9 @@
-import Navbar from './Navbar'
+import Header from './Header'
 import Footer from './Footer'
 
 const Layout = (props) => (
     <div id="Layout">
-        <Navbar/>
+        <Header/>
         <br/><br/><br/>
           {props.children}
         <Footer/>
